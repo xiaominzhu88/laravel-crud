@@ -2,15 +2,13 @@
 
 @section('content')
     <div class="row">
-        <div class="col-lg-12 margin-tb">
-            <div class="pull-left">
+            <div>
                 <h2>Add New Product</h2>
             </div>
-            <div class="pull-right">
+            <div>
                 <a class="btn btn-primary" href="{{ route('projects.index') }}" title="Go back"> <i
-                        class="fas fa-backward "></i> </a>
+                        class="fas fa-angle-double-left"></i> </a>
             </div>
-        </div>
     </div>
 
     @if ($errors->any())
@@ -48,7 +46,7 @@
             </div>
 
             <div class="col-xs-12 col-sm-12 col-md-12 text-center">
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn btn-primary">Add</button>
             </div>
         </div>
 

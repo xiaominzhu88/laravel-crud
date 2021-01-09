@@ -48,7 +48,7 @@ class ProjectController extends Controller
         Project::create($request->all());
 
         return redirect()->route('projects.index')
-            ->with('success', 'Project created successfully.');
+            ->with('success', 'Project created successfully');
     }
 
     /**

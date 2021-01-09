@@ -7,7 +7,7 @@
             </div>
             <div class="pull-right">
                 <a class="btn btn-primary" href="{{ route('projects.index') }}" title="Go back"> <i
-                        class="fas fa-backward "></i> </a>
+                        class="fas fa-angle-double-left"></i> </a>
             </div>
         </div>
     </div>

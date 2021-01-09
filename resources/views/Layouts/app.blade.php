@@ -1,7 +1,6 @@
 <html>
-
 <head>
-    <title>crud-Zhu @yield('title')</title>
+    <title>Crud-Zhu @yield('title')</title>
 
     <!-- Bootstrap -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/css/bootstrap.css"
@@ -19,22 +18,25 @@
         .row {
             background-color: lightgray;
             color: white;
-
+            margin: 1rem auto;
+            padding: 0.5rem;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
         }
 
-        .title {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+        .button {
+            margin-right:1.5rem;
         }
+
 
         .footer {
-            position: fixed;
-            margin: 2em auto;
-            width: 100%;
+            margin: 1rem auto;
             background-color: lightgray;
             color: white;
             text-align: center;
+            padding: 1rem;
+
         }
 
     </style>
@@ -42,18 +44,14 @@
 </head>
 
 <body>
-    @section('sidebar')
-
-    @show
-
+    {{-- TIL in readme --}}
+  @section('sidebar')
+  @show
     <div class="container">
         @yield('content')
     </div>
     <div class="text-center footer">
-
-        <h4>Xiaomin Zhu</h4>
-        <h4>xiaomin.zhu88@gmail.com</h4>
-
+      <h4>xiaomin.zhu88@gmail.com</h4>
     </div>
 </body>
 

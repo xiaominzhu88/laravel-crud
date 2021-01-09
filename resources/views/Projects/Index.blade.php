@@ -2,21 +2,23 @@
 
 @section('content')
     <div class="row">
-        <div class="col-lg-12 margin-tb">
-            <div class="pull-left">
+            <div>
                 <h2>Laravel CRUD </h2>
             </div>
-            <div class="pull-right">
+            <div>
+{{-- add button links to "create" page --}}
                 <a class="btn btn-success" href="{{ route('projects.create') }}" title="Create"> <i
-                        class="fas fa-plus-circle"></i>
+                        class="fas fa-user-plus"></i>
                 </a>
             </div>
-        </div>
     </div>
 
+{{-- messages are defined in ProjectController.php --}}
     @if ($message = Session::get('success'))
         <div class="alert alert-success">
-            <p>{{ $message }}</p>
+            <p>{{ $message }}            
+            <i class="fas fa-thumbs-up"></i>
+            </p>
         </div>
     @endif
 
@@ -39,12 +41,12 @@
                 <td>
                     <form action="{{ route('projects.destroy', $project->id) }}" method="POST">
 
-                        <a href="{{ route('projects.show', $project->id) }}" title="show">
-                            <i class="fas fa-eye text-success  fa-lg"></i>
+                        <a class="button" href="{{ route('projects.show', $project->id) }}" title="show">
+                            <i class="fas fa-book-open text-success  fa-lg"></i>
                         </a>
 
-                        <a href="{{ route('projects.edit', $project->id) }}">
-                            <i class="fas fa-edit  fa-lg"></i>
+                        <a class="button" href="{{ route('projects.edit', $project->id) }}">
+                            <i class="fas fa-pencil-alt  fa-lg"></i>
 
                         </a>
 

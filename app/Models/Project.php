@@ -11,6 +11,7 @@ class Project extends Model
     protected $table = 'projects';
     public $timestamps = true;
 
+    // fillable are the fields in the database that a user can fill
     protected $fillable = [
         'name',
         'introduction',
